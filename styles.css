@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 2em; 
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #c15252;
+ }
+
+  .header-wrapper{
+      display: flex;
+      justify-content: space-between;
+      background-color: #114479;
+      color: white;
+      padding: 2%;
+  }
+
+
+  .logotype img{
+    height: 65px;
+    width: 200;
+  }
+
+
+  /*This class keeps the things the same width*/
+.max-width {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+  /*Search styles*/
+
+  .searchbox {
+    position: relative; /*Places fa fa icon in the search field*/
+    margin: 2%;
+  }
+
+
+  .searchbox input{
+    height:5vh;
+    width: 100%; 
+    font-size: 1em;
+  }
+
+
+  .searchbox-ipad {
+    display: none;
+  }
+
+  .searchbox .fa {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    color: #114479;
+  }
+  
+  input:focus {
+    outline: none; /*Remove the border on focus*/
+  }
+
+
+/*Login styles*/
+
+.login {
+  font-size: 0.9em;
+  line-height: 2em; 
+}
+
+/*Nav links styles*/
+
+.navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+  .navbar ul{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .nav-links li {
+    list-style: none; 
+  }
+  
+  .nav-links li a{
+    color:  #114479;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-right: 2em;
+    display: block;
+    font-size: 1.3em;
+  }
+
+  .nav-links li a:hover {
+   color: #c15252;
+  }
+
+
+/*Hamburger menu styles*/
+
+.toggle-button {
+  position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
+  top: .70em;
+  right: 1em;
+  display: none; 
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3em;
+  height:2em;
+}
+
+.toggle-button .bar {
+  height: 0.35em;
+  width: 100%;
+  background-color: white;
+}
+
+.toggle {
+  display: none; /* Nav links only for hamburger menue*/
+}
+
+
+/*Content styles*/
+
+  main {
+    margin: 5% auto;
+    min-height: 80vh;
+}
+
+.content {
+  box-sizing: border-box; /*Whithout this, there would be a side scroll because the added 2% padding */
+  background-color:#E5E5E5;
+}
+
+/*Footer styles*/
+
+  footer {
+    background-color: #114479;
+    color: white;
+    text-align: center;
+  }
+
+  footer a{
+    color: white;
+  }
+
+  .footer-info {
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+  }
+
+  .footer-links li {
+    list-style: none; 
+  }
+
+  .footer-links li a:hover {
+    color: #c15252;
+  }
+
+
+
+  /*Smaller desktop, when screen is not very wide*/
+  
+  @media (max-width:1350px) { 
+  
+  
+    .searchbox-desktop {
+      width: 40%;
+    }
+
+    .navbar ul{
+      justify-content: center;
+    }
+
+    .content {
+      padding: 4%;
+    }
+  }
+
+
+  /*IPAD-ish sizes*/
+
+  @media (max-width:800px) { 
+
+    .searchbox-ipad {
+      display: block;
+    }
+
+
+    .searchbox-desktop {
+      display: none;
+    }
+
+
+    .login {
+      display: none;
+    }
+
+   
+  
+  .toggle {
+    display: block;
+  }
+
+  .toggle-button {
+   display: flex;
+   padding: 2%;
+  }
+
+  
+.nav-links {
+  display: none;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-links ul {
+  width: 100%;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.nav-links li a {
+  padding: .5em 1em;
+}
+
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  margin-top: 10%;
+}
+
+}
+
+/* Mobile devices */
+
+@media (max-width:300px) { 
+
+  .toggle-button {
+    width: 2em;
+  }
+
+}
