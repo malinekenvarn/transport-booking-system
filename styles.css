@@ -9,7 +9,7 @@
   body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
-    line-height: 2em; 
+    line-height: 1.8em; 
 }
 
 a {
@@ -111,7 +111,7 @@ a:hover {
 
 /*Hamburger menu styles*/
 
-.toggle-button {
+.hamburger-button {
   position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
   top: .70em;
   right: 1em;
@@ -122,7 +122,7 @@ a:hover {
   height:2em;
 }
 
-.toggle-button .bar {
+.hamburger-button .bar {
   height: 0.35em;
   width: 100%;
   background-color: white;
@@ -142,7 +142,11 @@ a:hover {
 
 .content {
   box-sizing: border-box; /*Whithout this, there would be a side scroll because the added 2% padding */
-  background-color:#E5E5E5;
+}
+
+.headings h1 {
+  text-align: center;
+  padding-bottom: 5%;
 }
 
 /*Footer styles*/
@@ -172,6 +176,53 @@ a:hover {
     color: #c15252;
   }
 
+  /*Index page styles*/
+
+
+  .article-section {
+    background-color:#E5E5E5;
+    padding: 2%;
+  }
+
+  .article-section h2 {
+    font-size: 1.4em; 
+  }
+
+  .article-section article{
+    position: relative;
+    background-color: white;
+    margin: 2%;
+    padding:1%;
+  }
+
+  .minusIcon {
+    display:none;
+  }
+
+  .minusIcon.active {
+    display: block;
+  }
+
+  .plusIcon.active {
+    display: none;
+  }
+
+
+  .moreInfo {
+    display: none;
+  }
+
+  .moreInfo.active {
+    display: block;
+  }
+
+  .showMore-button {
+    position: absolute;
+    top: .70em;
+    right: 1em;
+  }
+
+  
 
 
   /*Smaller desktop, when screen is not very wide*/
@@ -217,7 +268,7 @@ a:hover {
     display: block;
   }
 
-  .toggle-button {
+  .hamburger-button {
    display: flex;
    padding: 2%;
   }
@@ -262,7 +313,7 @@ a:hover {
 
 @media (max-width:300px) { 
 
-  .toggle-button {
+  .hamburger-button {
     width: 2em;
   }
 
