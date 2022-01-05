@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ a:hover {
 
 
   .logotype img{
-    height: 65px;
+    height: 60px;
     width: 200;
   }
 
@@ -144,10 +145,15 @@ a:hover {
   box-sizing: border-box; /*Whithout this, there would be a side scroll because the added 2% padding */
 }
 
-.headings h1 {
+.content h1  {
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
 }
+
+.content h2  {
+  padding: 2%;
+}
+
 
 /*Footer styles*/
 
@@ -184,15 +190,14 @@ a:hover {
     padding: 2%;
   }
 
-  .article-section h2 {
-    font-size: 1.4em; 
-  }
-
   .article-section article{
-    position: relative;
     background-color: white;
     margin: 2%;
     padding:1%;
+  }
+  .article-header {
+    display: flex;
+    justify-content: space-between;
   }
 
   .minusIcon {
@@ -207,7 +212,6 @@ a:hover {
     display: none;
   }
 
-
   .moreInfo {
     display: none;
   }
@@ -216,11 +220,11 @@ a:hover {
     display: block;
   }
 
-  .showMore-button {
-    position: absolute;
-    top: .70em;
-    right: 1em;
+  .article-main p, h3 {
+    padding: 2%;
   }
+
+  
 
   
 
@@ -298,6 +302,15 @@ a:hover {
 }
 
 
+.headings h1 {
+  font-size: 1.5em;
+}
+
+.headings h2 {
+  font-size: 1em;
+}
+
+
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -315,6 +328,10 @@ a:hover {
 
   .hamburger-button {
     width: 2em;
+  }
+
+  .article-header {
+    flex-direction: column;
   }
 
 }
