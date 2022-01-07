@@ -11,21 +11,47 @@ hamburgerButton.addEventListener('click', () => {
 
 /* Event listener for the view links */
 
-/*Make all plus icons clickable*/
+/*Make all plus icons clickable, Get all elements in the document with the showMore-button class*/
 
 document.querySelectorAll('.showMore-button').forEach(item => {
     item.addEventListener('click', event => {
         //handle click
-        console.log(event.target.parentElement.id) /**get article number */
         const moreInfo = document.getElementsByClassName('moreInfo')[event.target.parentElement.id];
         moreInfo.classList.toggle('active');
 
-        /*Toggle the plus and minus icons */ 
+        /*Toggle the plus and minus icons */
         const togglePlus = document.getElementsByClassName('plusIcon')[event.target.parentElement.id];
         togglePlus.classList.toggle('active');
 
         const toggleMinus = document.getElementsByClassName('minusIcon')[event.target.parentElement.id];
         toggleMinus.classList.toggle('active');
+
+        event.preventDefault(); /*Prevents the click event from scrolling itself to top of page*/
+    })
+})
+
+
+/* Booking page*/
+const oneWayBooking = document.getElementsByClassName('oneway-booking')[0];
+const recurringBooking = document.getElementsByClassName('recurring-booking')[0];
+
+
+/**Click on radio button will trigger event */
+document.querySelectorAll('[name="choice-of-travel"]').forEach(item => {
+    item.addEventListener('input', (event) => {
+
+        //toggle the booking forms
+        if (event.target.value === "oneway") {
+            if(recurringBooking.style.display = "block"){
+                recurringBooking.style.display ="none";
+            }
+            oneWayBooking.style.display = "block"
+        }else if(event.target.value === "recurring"){
+            if(oneWayBooking.style.display = "block"){
+                oneWayBooking.style.display ="none";
+            }
+            recurringBooking.style.display = "block"
+        }
     })
 })
 

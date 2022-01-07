@@ -41,10 +41,10 @@ a:hover {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  box-sizing: border-box; /*Whithout this, there would be a side scroll because the added 2% padding */
 }
 
   /*Search styles*/
-
   .searchbox {
     position: relative; /*Places fa fa icon in the search field*/
     margin: 2%;
@@ -52,9 +52,13 @@ a:hover {
 
 
   .searchbox input{
-    height:5vh;
-    width: 100%; 
-    font-size: 1em;
+    width: 100%;
+    padding: 2% 4%;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 2% 0;
+    font-size: 1.1em;
   }
 
 
@@ -141,49 +145,20 @@ a:hover {
     min-height: 80vh;
 }
 
-.content {
-  box-sizing: border-box; /*Whithout this, there would be a side scroll because the added 2% padding */
-}
-
-.content h1  {
+  h1  {
+  font-size: 2em;
   text-align: center;
-  padding-bottom: 4%;
+  padding-bottom: 8%;
+  color:#114479;
 }
 
-.content h2  {
-  padding: 2%;
+  h2  {
+  padding: 4%;
 }
 
 
-/*Footer styles*/
-
-  footer {
-    background-color: #114479;
-    color: white;
-    text-align: center;
-  }
-
-  footer a{
-    color: white;
-  }
-
-  .footer-info {
-    box-sizing: border-box; 
-    display: flex;
-    justify-content: space-between;
-    padding: 4%;
-  }
-
-  .footer-links li {
-    list-style: none; 
-  }
-
-  .footer-links li a:hover {
-    color: #c15252;
-  }
 
   /*Index page styles*/
-
 
   .article-section {
     background-color:#E5E5E5;
@@ -224,11 +199,102 @@ a:hover {
     padding: 2%;
   }
 
+  /*Booking page styles*/
+  .booking-choices {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4%;
+  }
+
+
+  /*Input fields*/
+  .oneway-booking input, select {
+    width: 100%;
+    padding: 2% 4%;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 2% 0;
+    font-size: 1.1em;
+  }
+
+  .oneway-booking {
+    background-color:#E5E5E5;
+    display: block;
+    padding: 5%;
+  }
+
+  .recurring-booking {
+    background-color: white;
+    display: none;
+  }
+
+  .submit-button {
+    width: 100%;
+    background-color: #114479;
+    border: none;
+    color: white;
+    padding: 2% 6%;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 2% 0;
+    cursor: pointer;
+  }
+
+  /*Confirmation message*/
+  .confirmation-message {
+    background-color:#E5E5E5;
+    padding: 5%;
+  }
+
+  /* My bookings table*/
+
+  .travels {
+    border-collapse: collapse; /* Removes gaps between rows*/
+    width: 100%;
+  }
   
-
+  .travels td, th {
+    background-color: #E5E5E5;
+    padding: 2%;
+    border-bottom: 5px solid white;
+  }
   
+  .travels th {
+    text-align: left;
+    background-color: #114479;
+    color: white;
+  }
+
+  /*Footer styles*/
+
+  footer {
+    background-color: #114479;
+    color: white;
+    text-align: center;
+  }
+
+  footer a{
+    color: white;
+  }
+
+  .footer-info {
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+  }
+
+  .footer-links li {
+    list-style: none; 
+  }
+
+  .footer-links li a:hover {
+    color: #c15252;
+  }
 
 
+    
   /*Smaller desktop, when screen is not very wide*/
   
   @media (max-width:1350px) { 
@@ -266,8 +332,6 @@ a:hover {
       display: none;
     }
 
-   
-  
   .toggle {
     display: block;
   }
@@ -301,16 +365,6 @@ a:hover {
   padding: .5em 1em;
 }
 
-
-.headings h1 {
-  font-size: 1.5em;
-}
-
-.headings h2 {
-  font-size: 1em;
-}
-
-
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -320,11 +374,23 @@ a:hover {
   margin-top: 10%;
 }
 
+.booking-choices {
+  flex-direction: column;
+}
+
 }
 
 /* Mobile devices */
 
 @media (max-width:300px) { 
+
+    h1 {
+    font-size: 1.2em;
+  }
+
+    h2 {
+    font-size: 1em;
+  }
 
   .hamburger-button {
     width: 2em;
