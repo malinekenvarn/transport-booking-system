@@ -33,9 +33,9 @@
         <nav class="navbar">
             <div class="nav-links">
                 <ul class="max-width">
-                    <li><a href="index.html"><u>Start</u></a></li>
+                    <li><a href="index.html">Start</a></li>
                     <li><a href="booking.html">Boka resa</a></li>
-                    <li><a href="myBookings.html">Mina resor</a></li>
+                    <li><a href="myBookings.html"><u>Mina resor</u></a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li class="toggle"><a href="#">Inställningar</a></li>
                     <li class="toggle"><a href="#">Logga ut</a></li>
@@ -63,36 +63,76 @@
         <section class="max-width">
             <h1>Mina resor</h1>
             <div class="content">
-                <h2>Mina kommande resor</h2>
-                <table class="travels">
-                    <tr>
-                      <th>Datum</th>
-                      <th>Avgångstid</th>
-                      <th>Från</th>
-                      <th>Till</th>
-                      <th>Avboka</th>
-                      <th>Ändra</th>
-                    </tr>
-                    <tr>
-                      <td>2022-01-07</td>
-                      <td>15:15</td>
-                      <td>Jungmansgatan 7</td>
-                      <td>Kungsgatan 6</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                        <td>2022-01-07</td>
-                        <td>15:15</td>
-                        <td>Jungmansgatan 7</td>
-                        <td>Kungsgatan 6</td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                  </table>
+                <div class="table-wrapper table-1">
+                    <h2>Mina kommande resor</h2>
+                    <!--Table for individual travels-->
+                    <table class="travels">
+                        <tr>
+                            <th>Datum & Avgångstid</th>
+                            <th>Färdväg</th>
+                            <th>Avboka</th>
+                            <th>Ändra</th>
+                        </tr>
+                        <!--Example 1-->
+                        <tr>
+                            <td><b>Datum:</b> 2022-01-07 <br>
+                                <b>Tid:</b> 15:15
+                            </td>
+                            <td><b>Från:</b> Jungmansgatan 7 <br>
+                                <b>Till:</b> Kungsgatan 6
+                            </td>
+                            <td><a href="avboka.html"><img class="deleteIcon" src="images/deleteIcon.png" alt="Radera knapp"></a</td>
+                            <td><a href="editOneway.html"><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></a></td>
+                        </tr>
+                        <!--Example 2-->
+                        <tr>
+                            <td><b>Datum:</b> 2022-02-02 <br>
+                                <b>Tid:</b> 11:11
+                            </td>
+                            <td><b>Från:</b> Mösevägen 3 <br>
+                                <b>Till:</b> Lönneberga 13
+                            </td>
+                            <td><a href="avboka.html"><img class="deleteIcon" src="images/deleteIcon.png" alt="Radera knapp"></a></td>
+                            <td><a href="editOneway.html"><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></a></td>
+                        </tr>
+                    </table>
+                </div>
 
-                <h2>Mina återkommande resor</h2>
 
+                <!--Table for recurring travels-->
+                <div class="table-wrapper table-2">
+                    <h2>Mina återkommande resor</h2>
+                    <table class="travels">
+                        <tr>
+                            <th>Titel</th>
+                            <th>Färdväg</th>
+                            <th>Dag & tid</th>
+                            <th>Redigera</th>
+                        </tr>
+                        <!--Example 1-->
+                        <tr>
+                            <td><b>Till jobbet</b></td>
+                            <td><b>Från:</b> Västgötagatan 143 <br>
+                                <b>Till:</b> Veddigevägen 666
+                            </td>
+                            <td>Mån, tis, ons, tor, fre <br>
+                                klockan: 07:45
+                            </td>
+                            <td><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></td>
+                        </tr>
+                        <!--Example 2-->
+                        <tr>
+                            <td><b>Från jobbet</b></td>
+                            <td><b>Från:</b> Veddigevägen 666 <br>
+                                <b>Till:</b> Västgötagatan 143
+                            </td>
+                            <td>Mån, tis, ons, tor, fre <br>
+                                klockan: 17:15
+                            </td>
+                            <td><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
     </main>

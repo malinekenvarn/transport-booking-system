@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #c15252;
+  color: #5cb3fd;
  }
 
   .header-wrapper{
@@ -110,7 +110,7 @@ a:hover {
   }
 
   .nav-links li a:hover {
-   color: #c15252;
+   color: #5cb3fd;
   }
 
 
@@ -247,24 +247,57 @@ a:hover {
     padding: 5%;
   }
 
+  .goBackLink {
+    color:  #114479;
+    padding-top: 4%;
+    font-size: 1.3em;
+  }
+
   /* My bookings table*/
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
 
   .travels {
     border-collapse: collapse; /* Removes gaps between rows*/
     width: 100%;
   }
-  
-  .travels td, th {
-    background-color: #E5E5E5;
-    padding: 2%;
-    border-bottom: 5px solid white;
-  }
-  
+
   .travels th {
-    text-align: left;
     background-color: #114479;
     color: white;
   }
+  
+  .travels td, th {
+    background-color: #E5E5E5;
+    padding: 1.5%;
+    border-bottom: 5px solid white;
+    text-align: left;
+  }
+
+  .travels img{
+    margin: 1.5%;
+  }
+
+  .table-2 h2{
+    margin-top: 10%; /* Makes space between tables*/
+  }
+
+  /* Cancel travel styles*/
+  .delete-button {
+    width: 100%;
+    background-color: #c15252;
+    border: none;
+    color: white;
+    padding: 2% 6%;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 2% 0;
+    cursor: pointer;
+  }
+  
+ 
 
   /*Footer styles*/
 
@@ -290,7 +323,7 @@ a:hover {
   }
 
   .footer-links li a:hover {
-    color: #c15252;
+    color: #5cb3fd;
   }
 
 
@@ -311,6 +344,7 @@ a:hover {
     .content {
       padding: 4%;
     }
+
   }
 
 
@@ -376,6 +410,10 @@ a:hover {
 
 .booking-choices {
   flex-direction: column;
+}
+
+.travels {
+  width: 800px; /* This is so the table will look ok even in a small screen. The table can be wiewed by side scrolling the table thanks to the overflow property. Setting a fixed width prevents the information in the cells from looking messy */
 }
 
 }

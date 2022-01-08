@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florence Färdtjänst | Bokningsbekräftelse</title>
+    <title>Florence Färdtjänst | Redigera resa</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -61,19 +61,40 @@
 
     <main>
         <section class="max-width">
-            <h1>Bokningsbekräftelse</h1>
-            <div class="confirmation-message-section content">
-                <h2>Du har bokat följande resa:</h2>
+            <div class="booking-section content">
 
-                <div class="confirmation-message">
-                    <p><strong>Hämtning på adress: </strong>Jungmansgatan 7</p>
-                    <p><strong>Destinationsadress: </strong>Kungsgatan 6</p>
-                    <p><strong>Datum: </strong>2022-01-07</p>
-                    <p><strong>Tid: </strong>15:15</p>
-                    <p><strong>Hjälpmedel: </strong>Ledarhund</p>
-                </div>
+            <h1>Ändra resa</h1>
+
+        
+            <!--Make changes form-->
+            <div class="oneway-booking">
+                <h2>Här kan du göra ändringar i din bokning</h2>
+                <form action="editConfirmationMessage.html">
+                    <label for="from">Vart vill du bli hämtad?</label>
+                    <input type="text" id="from" name="from" placeholder="Jungmansgatan 7"><br>
+                    <label for="to">Vart vill du åka?</label>
+                    <input type="text" id="to" name="to" placeholder="Kungsgatan 6"><br>
+                    <label for="date"> Vilket datum skall resan ske?</label>
+                    <input type="date" name="date" id="date"><br>
+                    <label for="time">När vill du bli hämtad?</label>
+                    <input type="time" id="time" name="time"> <br>
+                    <label for="additional-info">Vill du lägga till något?</label>
+                    <select id="additional-info" name="additional-info">
+                        <option value="none">Inget hjälpmedel</option>
+                        <option value="wheelchair">Rullstol</option>
+                        <option value="assistant">Ledsagare</option>
+                        <option value="service-dog">Ledsagarhund</option>
+                    </select>
+                    <button class="submit-button">Bekräfta ändringar</button>
+                </form>
             </div>
-            <div class="goBackLink"><a href="booking.html" >Tillbaka till bokningssidan</a></div>
+
+            <!--Book a recurring transport form-->
+            <div class="recurring-booking">
+                <h2>Boka återkommande resor</h2>
+            </div>
+
+            </div>
 
         </section>
     </main>
