@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florence Färdtjänst | Bokningsbekräftelse</title>
+    <title>Florence Färdtjänst | Avboka resa</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -58,22 +58,20 @@
 
     <main>
         <section class="max-width">
-            <h1>Bokningsbekräftelse</h1>
+            <h1>Avboka resa</h1>
             <div class="confirmation-message-section content">
-                <h2>Din bokning har nu uppdaterats</h2>
-                <!--I use the strong tag to point out the most important information which is what you have changed -->
-                <p>Du har ändrat <strong>hjälpmedel</strong> till: inget hjälpmedel.</p>
-                <p>Du har ändrat <strong>Avgångstid</strong> till: 16:15.</p>
+                <h2>Vill du avboka följande resa?</h2>
                 <div class="confirmation-message">
                     <p><b>Hämtning på adress:</b> Jungmansgatan 7</p>
                     <p><b>Destinationsadress:</b> Kungsgatan 6</p>
                     <p><b>Datum:</b> 2022-01-07</p>
-                    <p><b>Tid:</b> 16:15</p>
-                    <p><b>Övrigt:</b> Inget hjälpmedel</p>
-                    <p><b>Meddelande:</b> Jag har kryckor istället för rullstol. Får de plats?</p>
+                    <p><b>Tid:</b> 15:15</p>
+                    <p><b>Övrigt:</b> Ledarhund</p>
                 </div>
+                <form action="myBookings.html">
+                    <button class="delete-button">Avboka resa</button>
+                </form>
             </div>
-            <div class="goBackLink"><a href="myBookings.html">Tillbaka till Mina resor</a></div>
         </section>
     </main>
 

@@ -28,7 +28,6 @@
                 <p>Inställningar | Logga ut</p>
             </div>
         </div>
-
         <!--Nav bar-->
         <nav class="navbar">
             <div class="nav-links">
@@ -36,20 +35,18 @@
                     <li><a href="index.html">Start</a></li>
                     <li><a href="booking.html">Boka resa</a></li>
                     <li><a href="myBookings.html"><u>Mina resor</u></a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="accessibility.html">Tillgänglighet</a></li>
                     <li class="toggle"><a href="#">Inställningar</a></li>
                     <li class="toggle"><a href="#">Logga ut</a></li>
                 </ul>
             </div>
         </nav>
-
         <!--Hamburger menu for smaller screens-->
         <a href="#" class="hamburger-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
-
         <!--Searchfield for smaller screens-->
         <div class="searchbox searchbox-ipad">
             <form action="#">
@@ -81,8 +78,10 @@
                             <td><b>Från:</b> Jungmansgatan 7 <br>
                                 <b>Till:</b> Kungsgatan 6
                             </td>
-                            <td><a href="avboka.html"><img class="deleteIcon" src="images/deleteIcon.png" alt="Radera knapp"></a</td>
-                            <td><a href="editOneway.html"><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></a></td>
+                            <td><a href="cancel.html"><img class="deleteIcon" src="images/deleteIcon.png"
+                                        alt="Radera knapp"></a></td>
+                            <td><a href="editOneway.html"><img class="editIcon" src="images/editIcon.png"
+                                        alt="Redigera knapp"></a></td>
                         </tr>
                         <!--Example 2-->
                         <tr>
@@ -92,8 +91,10 @@
                             <td><b>Från:</b> Mösevägen 3 <br>
                                 <b>Till:</b> Lönneberga 13
                             </td>
-                            <td><a href="avboka.html"><img class="deleteIcon" src="images/deleteIcon.png" alt="Radera knapp"></a></td>
-                            <td><a href="editOneway.html"><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></a></td>
+                            <td><a href="cancel.html"><img class="deleteIcon" src="images/deleteIcon.png"
+                                        alt="Radera knapp"></a></td>
+                            <td><a href="editOneway.html"><img class="editIcon" src="images/editIcon.png"
+                                        alt="Redigera knapp"></a></td>
                         </tr>
                     </table>
                 </div>
@@ -107,35 +108,45 @@
                             <th>Titel</th>
                             <th>Färdväg</th>
                             <th>Dag & tid</th>
-                            <th>Redigera</th>
+                            <th>Avboka</th>
+                            <th>Ändra</th>
                         </tr>
                         <!--Example 1-->
                         <tr>
-                            <td><b>Till jobbet</b></td>
-                            <td><b>Från:</b> Västgötagatan 143 <br>
-                                <b>Till:</b> Veddigevägen 666
+                            <td><b>Spela golf med Göran</b></td>
+                            <td><b>Från:</b> Jungmansgatan 7 <br>
+                                <b>Till:</b> Storegården 30
                             </td>
-                            <td>Mån, tis, ons, tor, fre <br>
-                                klockan: 07:45
+                            <td>Torsdagar <br>
+                                Varannan vecka<br>
+                                Klockan: 8:15
                             </td>
-                            <td><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></td>
+                            <td><a href="cancelRecurring.html"><img class="deleteIcon" src="images/deleteIcon.png" alt="Radera knapp"></a>
+                            </td>
+                            <td><a href="editRecurring.html"><img class="editIcon" src="images/editIcon.png"
+                                        alt="Redigera knapp"></a></td>
                         </tr>
                         <!--Example 2-->
                         <tr>
-                            <td><b>Från jobbet</b></td>
-                            <td><b>Från:</b> Veddigevägen 666 <br>
-                                <b>Till:</b> Västgötagatan 143
+                            <td><b>Från golfklubben</b></td>
+                            <td><b>Från:</b> Storegården 30 <br>
+                                <b>Till:</b> Jungmansgatan 7
                             </td>
-                            <td>Mån, tis, ons, tor, fre <br>
-                                klockan: 17:15
+                            <td>Torsdagar <br>
+                                Varannan vecka<br>
+                                Klockan: 11:15
                             </td>
-                            <td><img class="editIcon" src="images/editIcon.png" alt="Redigera knapp"></td>
+                            <td><a href="cancelRecurring.html"><img class="deleteIcon" src="images/deleteIcon.png" alt="Radera knapp"></a>
+                            </td>
+                            <td><a href="editRecurring.html"><img class="editIcon" src="images/editIcon.png"
+                                        alt="Redigera knapp"></a></td>
                         </tr>
                     </table>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-info max-width">
             <div class="contact-info">
@@ -146,7 +157,7 @@
             <ul class="footer-links">
                 <li><a href="#">Behandling av personuppgifter</a></li>
                 <li><a href="#">Inställningar för Cookies</a></li>
-                <li><a href="accessibility.html">Tillgänglighet</a></li>
+                <li><a href="#">Om oss</a></li>
             </ul>
         </div>
     </footer>

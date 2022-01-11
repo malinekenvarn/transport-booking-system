@@ -28,7 +28,6 @@
                 <p>Inställningar | Logga ut</p>
             </div>
         </div>
-
         <!--Nav bar-->
         <nav class="navbar">
             <div class="nav-links">
@@ -36,20 +35,18 @@
                     <li><a href="index.html">Start</a></li>
                     <li><a href="booking.html">Boka resa</a></li>
                     <li><a href="myBookings.html">Mina resor</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="accessibility.html">Tillgänglighet</a></li>
                     <li class="toggle"><a href="#">Inställningar</a></li>
                     <li class="toggle"><a href="#">Logga ut</a></li>
                 </ul>
             </div>
         </nav>
-
         <!--Hamburger menu for smaller screens-->
         <a href="#" class="hamburger-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
-
         <!--Searchfield for smaller screens-->
         <div class="searchbox searchbox-ipad">
             <form action="#">
@@ -62,42 +59,36 @@
     <main>
         <section class="max-width">
             <div class="booking-section content">
-
-            <h1>Ändra resa</h1>
-
-        
-            <!--Make changes form-->
-            <div class="oneway-booking">
-                <h2>Här kan du göra ändringar i din bokning</h2>
-                <form action="editConfirmationMessage.html">
-                    <label for="from">Vart vill du bli hämtad?</label>
-                    <input type="text" id="from" name="from" placeholder="Jungmansgatan 7"><br>
-                    <label for="to">Vart vill du åka?</label>
-                    <input type="text" id="to" name="to" placeholder="Kungsgatan 6"><br>
-                    <label for="date"> Vilket datum skall resan ske?</label>
-                    <input type="date" name="date" id="date"><br>
-                    <label for="time">När vill du bli hämtad?</label>
-                    <input type="time" id="time" name="time"> <br>
-                    <label for="additional-info">Vill du lägga till något?</label>
-                    <select id="additional-info" name="additional-info">
-                        <option value="none">Inget hjälpmedel</option>
-                        <option value="wheelchair">Rullstol</option>
-                        <option value="assistant">Ledsagare</option>
-                        <option value="service-dog">Ledsagarhund</option>
-                    </select>
-                    <button class="submit-button">Bekräfta ändringar</button>
-                </form>
+                <h1>Ändra resa</h1>
+                <!--Make changes form-->
+                <div class="oneway-booking">
+                    <h2>Här kan du göra ändringar i din bokning</h2>
+                    <form action="editConfirmationMessage.html">
+                        <label for="from">Vart vill du bli hämtad?</label>
+                        <input type="text" id="from" name="from" placeholder="Jungmansgatan 7"><br>
+                        <label for="to">Vart vill du åka?</label>
+                        <input type="text" id="to" name="to" placeholder="Kungsgatan 6"><br>
+                        <label for="date"> Vilket datum skall resan ske?</label>
+                        <input type="date" name="date" id="date"><br>
+                        <label for="time">När vill du bli hämtad?</label>
+                        <input type="time" id="time" name="time"> <br>
+                        <label for="additional-info">Vill du lägga till något?</label>
+                        <select id="additional-info" name="additional-info">
+                            <option value="none">Inget hjälpmedel</option>
+                            <option value="wheelchair">Rullstol</option>
+                            <option value="walker">Rullator/betastöd</option>
+                            <option value="assistant">Ledsagare</option>
+                            <option value="service-dog">Ledsagarhund</option>
+                        </select>
+                        <label for="message2">Skriv ett meddelande</label>
+                        <input type="text" id="message2" name="message2" class="message"><br>
+                        <button class="submit-button">Bekräfta ändringar</button>
+                    </form>
+                </div>
             </div>
-
-            <!--Book a recurring transport form-->
-            <div class="recurring-booking">
-                <h2>Boka återkommande resor</h2>
-            </div>
-
-            </div>
-
         </section>
     </main>
+
     <footer>
         <div class="footer-info max-width">
             <div class="contact-info">
@@ -108,7 +99,7 @@
             <ul class="footer-links">
                 <li><a href="#">Behandling av personuppgifter</a></li>
                 <li><a href="#">Inställningar för Cookies</a></li>
-                <li><a href="accessibility.html">Tillgänglighet</a></li>
+                <li><a href="#">Om oss</a></li>
             </ul>
         </div>
     </footer>

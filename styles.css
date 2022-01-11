@@ -32,16 +32,16 @@ a:hover {
 
   .logotype img{
     height: 60px;
-    width: 200;
+    width: 200px;
   }
 
 
-  /*This class keeps the things the same width*/
+/*This class keeps the things the same width*/
 .max-width {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  box-sizing: border-box; /*Whithout this, there would be a side scroll because the added 2% padding */
+  box-sizing: border-box; 
 }
 
   /*Search styles*/
@@ -71,6 +71,7 @@ a:hover {
     right: 10px;
     top: 30%;
     color: #114479;
+    font-size: 1.9em;
   }
   
   input:focus {
@@ -79,14 +80,12 @@ a:hover {
 
 
 /*Login styles*/
-
 .login {
   font-size: 0.9em;
   line-height: 2em; 
 }
 
 /*Nav links styles*/
-
 .navbar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -115,7 +114,6 @@ a:hover {
 
 
 /*Hamburger menu styles*/
-
 .hamburger-button {
   position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
   top: .70em;
@@ -133,32 +131,40 @@ a:hover {
   background-color: white;
 }
 
+/* Nav links only for hamburger menue*/
 .toggle {
-  display: none; /* Nav links only for hamburger menue*/
+  display: none; 
 }
 
 
 /*Content styles*/
-
   main {
     margin: 5% auto;
     min-height: 80vh;
 }
 
   h1  {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
-  padding-bottom: 8%;
+  padding-bottom: 4%;
   color:#114479;
+  line-height: 1.5em; 
 }
 
   h2  {
   padding: 4%;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 
-
   /*Index page styles*/
+  .florence-intro {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 4%;
+    color:#114479;
+  }
 
   .article-section {
     background-color:#E5E5E5;
@@ -206,8 +212,16 @@ a:hover {
     padding: 4%;
   }
 
+  label, .recurring-booking p, .change-recurring-booking p   {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .choices-wrapper label{
+    font-size: 1em;
+    font-weight: normal;
+  }
 
-  /*Input fields*/
   .oneway-booking input, select {
     width: 100%;
     padding: 2% 4%;
@@ -225,9 +239,37 @@ a:hover {
   }
 
   .recurring-booking {
-    background-color: white;
+    background-color:#E5E5E5;
     display: none;
+    padding: 5%;
   }
+
+  .recurring-booking input[type=text], input[type=time], input[type=date], select {
+    width: 100%;
+    padding: 2% 4%;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 2% 0;
+    font-size: 1.1em;
+  }
+
+  input[type=checkbox]{
+    width: 2em;
+    height: 2em;
+}
+
+input[type=radio]{
+  width: 2em;
+  height: 2em;
+}
+
+.choices-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
 
   .submit-button {
     width: 100%;
@@ -241,7 +283,27 @@ a:hover {
     cursor: pointer;
   }
 
-  /*Confirmation message*/
+  .message {
+    height: 8em;
+  }
+
+  /*Change recurring booking form*/
+  .change-recurring-booking {
+    background-color:#E5E5E5;
+    padding: 5%;
+  }
+
+  .change-recurring-booking input[type=text], input[type=time], input[type=date], select {
+    width: 100%;
+    padding: 2% 4%;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 2% 0;
+    font-size: 1.1em;
+  }
+
+  /*Confirmation messages */
   .confirmation-message {
     background-color:#E5E5E5;
     padding: 5%;
@@ -253,8 +315,7 @@ a:hover {
     font-size: 1.3em;
   }
 
-  /* My bookings table*/
-
+  /* Bookings table*/
   .table-wrapper {
     overflow-x: auto;
   }
@@ -284,7 +345,7 @@ a:hover {
     margin-top: 10%; /* Makes space between tables*/
   }
 
-  /* Cancel travel styles*/
+  /* Cancel travel */
   .delete-button {
     width: 100%;
     background-color: #c15252;
@@ -296,11 +357,15 @@ a:hover {
     margin: 2% 0;
     cursor: pointer;
   }
+
+  /* Accessibility page*/
+
+  .accessibility-content p{
+    text-align: center;
+  }
   
- 
 
   /*Footer styles*/
-
   footer {
     background-color: #114479;
     color: white;
@@ -329,7 +394,6 @@ a:hover {
 
     
   /*Smaller desktop, when screen is not very wide*/
-  
   @media (max-width:1350px) { 
   
   
@@ -349,7 +413,6 @@ a:hover {
 
 
   /*IPAD-ish sizes*/
-
   @media (max-width:800px) { 
 
     .searchbox-ipad {
@@ -408,10 +471,6 @@ a:hover {
   margin-top: 10%;
 }
 
-.booking-choices {
-  flex-direction: column;
-}
-
 .travels {
   width: 800px; /* This is so the table will look ok even in a small screen. The table can be wiewed by side scrolling the table thanks to the overflow property. Setting a fixed width prevents the information in the cells from looking messy */
 }
@@ -419,22 +478,22 @@ a:hover {
 }
 
 /* Mobile devices */
+@media (max-width:400px) { 
 
-@media (max-width:300px) { 
-
-    h1 {
-    font-size: 1.2em;
-  }
-
-    h2 {
-    font-size: 1em;
-  }
 
   .hamburger-button {
     width: 2em;
   }
 
   .article-header {
+    flex-direction: column;
+  }
+
+  .booking-choices {
+    flex-direction: column;
+  }
+
+  .choices-wrapper {
     flex-direction: column;
   }
 

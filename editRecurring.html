@@ -33,7 +33,7 @@
             <div class="nav-links">
                 <ul class="max-width">
                     <li><a href="index.html">Start</a></li>
-                    <li><a href="booking.html"><u>Boka resa</u></a></li>
+                    <li><a href="booking.html">Boka resa</a></li>
                     <li><a href="myBookings.html">Mina resor</a></li>
                     <li><a href="accessibility.html">Tillgänglighet</a></li>
                     <li class="toggle"><a href="#">Inställningar</a></li>
@@ -59,58 +59,19 @@
     <main>
         <section class="max-width">
             <div class="booking-section content">
-                <h1>Boka resa</h1>
-                <div class="booking-choices">
-                    <div>
-                        <input type="radio" id="oneway" name="choice-of-travel" value="oneway" checked="checked">
-                        <label for="oneway">Enkelresa</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="recurring" name="choice-of-travel" value="recurring">
-                        <label for="recurring">Återkommande resa</label>
-                    </div>
-                </div>
+                <h1>Redigera en återkommande resa</h1>
 
-                <!--Either one of the two forms will show, based on the choice made in the booking choices form-->
-
-                <!--Book a single transport form-->
-                <div class="oneway-booking">
-                    <h2>Boka en enkelresa</h2>
-                    <form action="confirmationMessage.html">
-                        <label for="from">Vart vill du bli hämtad?</label>
-                        <input type="text" id="from" name="from" placeholder="Skriv din hämtningsadress här..."><br>
-                        <label for="to">Vart vill du åka?</label>
-                        <input type="text" id="to" name="to" placeholder="Skriv destinationsadress här..."><br>
-                        <label for="date"> Vilket datum skall resan ske?</label>
-                        <input type="date" name="date" id="date"><br>
-                        <label for="time">När vill du bli hämtad?</label>
-                        <input type="time" id="time" name="time"> <br>
-                        <label for="additional-info">Vill du lägga till något?</label>
-                        <select id="additional-info" name="additional-info">
-                            <option value="none">Inget hjälpmedel</option>
-                            <option value="wheelchair">Rullstol</option>
-                            <option value="walker">Rullator/betastöd</option>
-                            <option value="assistant">Ledsagare</option>
-                            <option value="service-dog">Ledsagarhund</option>
-                        </select>
-                        <label for="message">Skriv ett meddelande</label>
-                        <input type="text" id="message" class="message" name="message"><br>
-                        <button class="submit-button">Boka</button>
-                    </form>
-                </div>
-
-                <!--Book a recurring transport form-->
-                <div class="recurring-booking">
-                    <h2>Registrera en återkommande resa</h2>
-                    <form action="RecurringConfirmationMessage.html">
+                <div class="change-recurring-booking">
+                    <h2>Gör ändringar i: Spela golf med Göran</h2>
+                    <form action="editRecurringConfirmationMessage.html">
                         <label for="title">Ge resan ett namn</label>
-                        <input type="text" id="title" name="title" placeholder="Exempel: Till jobbet"><br>
-                        <label for="from2">Vart vill du bli hämtad?</label>
-                        <input type="text" id="from2" name="from2" placeholder="Skriv din hämtningsadress här..."><br>
-                        <label for="to2">Vart vill du åka?</label>
-                        <input type="text" id="to2" name="to2" placeholder="Skriv destinationsadress här..."><br>
+                        <input type="text" id="title" name="title" placeholder="Spela golf med Göran"><br>
+                        <label for="from">Vart vill du bli hämtad?</label>
+                        <input type="text" id="from" name="from" placeholder="Jungmansgatan 7"><br>
+                        <label for="to">Vart vill du åka?</label>
+                        <input type="text" id="to" name="to" placeholder="Storegården 30"><br>
                         <label for="time">När vill du bli hämtad?</label>
-                        <input type="time" id="time2" name="time2">
+                        <input type="time" id="time" name="time">
                         <!--The choices for how the travels will reoccur-->
                         <p>Välj dag för återkommande resa</p>
                         <div class="choices-wrapper">
@@ -147,7 +108,7 @@
                         <p>Välj datum för återkommande resa</p>
                         <div class="choices-wrapper">
                             <div>
-                                <input type="date" name="date2" id="date2"><br>
+                                <input type="date" name="date" id="date"><br>
                             </div>
                             <div>
                                 <select>
@@ -157,8 +118,8 @@
                                 </select>
                             </div>
                         </div>
-                        <label for="additional-info2">Vill du lägga till något?</label>
-                        <select id="additional-info2" name="additional-info2">
+                        <label for="additional-info">Vill du lägga till något?</label>
+                        <select id="additional-info" name="additional-info">
                             <option value="none">Inget hjälpmedel</option>
                             <option value="wheelchair">Rullstol</option>
                             <option value="walker">Rullator/betastöd</option>
@@ -167,7 +128,7 @@
                         </select>
                         <label for="message2">Skriv ett meddelande</label>
                         <input type="text" id="message2" name="message2" class="message"><br>
-                        <button class="submit-button">Registrera</button>
+                        <button class="submit-button">Bekräfta ändringar</button>
                     </form>
                 </div>
             </div>
