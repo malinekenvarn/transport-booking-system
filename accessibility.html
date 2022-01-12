@@ -32,7 +32,7 @@
         <nav class="navbar">
             <div class="nav-links">
                 <ul class="max-width">
-                    <li><a href="index.html"><u>Start</u></a></li>
+                    <li><a href="index.html">Start</a></li>
                     <li><a href="booking.html">Boka resa</a></li>
                     <li><a href="myBookings.html">Mina resor</a></li>
                     <li><a href="accessibility.html"><u>Tillgänglighet</u></a></li>
@@ -58,11 +58,73 @@
 
     <main>
         <section class="max-width">
-            <h1>Tillgänglighetsredogörelse</h1>
+            <h1>Tillgänglighet</h1>
             <div class="accessibility-content content">
                 <!--Ingress-->
-                <p><strong>Some important notes</strong></p>
-                <h2>Subheading</h2>
+                <p class="ingress"><strong>Florence Färdtjänst vill att webbplatsen skall vara tillgänglig för så många
+                        som möjligt. Den här sidan innehåller en tillgänglighetsredogörelse som berör hur webbplatsen
+                        uppfyller lagen om tillgänglighet
+                        till digital offentlig service, samt lyfter fram de delar som inte uppfyller kraven. I
+                        formuläret längst ner
+                        på sidan kan du lämna feedback på det du tycker brister i fråga om tillgänglighet.</strong></p>
+
+                <h2>Hur tillgänglig är webbplatsen?</h2>
+                <p>Florence Färdtjänst försöker att följa riktlinjerna från <a
+                        href="https://webbriktlinjer.se/riktlinjer/">Webbriktlinjer.se</a> och i nuläget uppfylls
+                    följande:</p>
+                <h3>Webbplatsens konstruktion</h3>
+                <p>Webbplatsen är designad för att vara responsiv vilket betyder att webbplatsen är användbar på både
+                    stora
+                    och små skärmar. Tester har gjorts med skärmar ner till storlek på 280 pixlar bredd.</p>
+                <p>Startsidan är designad för att ge en introduktion till webbplatsen, tala om vilket företag som ligger
+                    bakom den , samt ge information om hur man hittar och använder webbplatsens olika funktioner. </p>
+                <h3>Innehåll</h3>
+                <p>Vi har försökt att ge alla funktioner logiska namn och att knappar heter samma sak på
+                    alla sidor. En röd knapp heter "Avboka resa" på alla sidor där dessa förekommer. De blå knapparna
+                    används för att boka resor och dessa heter "Boka". Det finns dock blå knappar som heter "Bekräfta
+                    ändringar" på de sidor där man gör ändringar. Att de har samma färg som Boka-knapparna är för att
+                    ett
+                    formulär som gör ändringar i stort sett är samma sak som att boka en resa, detta kan ses som att
+                    resan bokas om på nytt. Vi tror att ha samma blå färg på dessa knappar känns intuitivt.</p>
+                <h3>Anpassningar</h3>
+                <p>För att underlätta navigering för personer med synnedsättning har stora textsnitt använts och den
+                    grafiska profilen är designad att ha tydliga kontraster. Den blå färgen är mörk så att den vita
+                    texten skall synas tydligt, och där svart text förekommer så används vit bakgrund. </p>
+                <p>Webbplatsen har inga bilder och därför är informationen inte beroende av grafisk representation, allt
+                    beskrivs i text så att det är lika tillgängligt för dem som har skärmläsare som de är för dem som
+                    kan läsa texten själva.</p>
+                <p>Semantiska HTML-element används för att skärmläsare skall kunna tolka sidornas innehåll korrekt.
+                    Exempelvis är text som skall betonas markerat med elementet Strong, detta kan man se i ingresserna
+                    bland annat.</p>
+                <h2>Brister i tillgänglighet</h2>
+                <p>För närvarande finns ingen funktionalitet för att se webbplatsen på andra språk.</p>
+                <p>Det finns brister i användningen av label element vilket gör att inte allt innehåll blir tillgängligt
+                    via
+                    skärmläsare.</p>
+
+
+                <h2>Rapportera brister till oss! </h2>
+                <p>Om något är oklart eller det finns frågor angående denna webbplats, så är ni välkomna att ringa till
+                    oss på telefonnummer <b>xxx-123 456.</b></p>
+                <p>Det går också att kontakta kundservice via <a href="mailto:kundservice@thisexample.com">email</a>.
+                </p>
+                <p>Om ni har hittat någon brist ni vill rapportera till oss, eller har feedback på hur vi kan göra denna
+                    webbplats mer tillgänglig så är ni välkomna att skriva era synpunkter i formuläret nedan.</p>
+                <div class="forms accessibility-form">
+                    <form action="#">
+                        <label for="message">Skriv ett meddelande</label>
+                        <input type="text" id="message" class="message" name="message"
+                            placeholder="Vad tycker du brister på webbplatsen?"><br>
+                        <br>
+                        <p>Om du vill ha svar från oss så kan du lämna din emailadress så återkommer vi till dig så
+                            snart vi kan.</p><br>
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name" placeholder="(Frivilligt)"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="(Frivilligt)"><br>
+                        <button class="submit-button">Sänd formulär</button>
+                    </form>
+                </div>
             </div>
         </section>
 

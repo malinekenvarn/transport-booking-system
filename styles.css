@@ -7,19 +7,13 @@
   padding: 0;
 }
 
+/* General styles */
+
   body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
     line-height: 1.8em; 
 }
-
-a {
-  text-decoration: none; 
-}
-
-a:hover {
-  color: #5cb3fd;
- }
 
   .header-wrapper{
       display: flex;
@@ -35,16 +29,21 @@ a:hover {
     width: 200px;
   }
 
+  a {
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    color: #5cb3fd;
+   }
 
-/*This class keeps the things the same width*/
-.max-width {
+.max-width { /*This class keeps the things the same width*/
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  box-sizing: border-box; 
+  box-sizing: border-box; /* prevents the added padding from creating a side scroll when the screen shrinks*/
 }
 
-  /*Search styles*/
   .searchbox {
     position: relative; /*Places fa fa icon in the search field*/
     margin: 2%;
@@ -79,13 +78,11 @@ a:hover {
   }
 
 
-/*Login styles*/
 .login {
   font-size: 0.9em;
   line-height: 2em; 
 }
 
-/*Nav links styles*/
 .navbar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -113,7 +110,6 @@ a:hover {
   }
 
 
-/*Hamburger menu styles*/
 .hamburger-button {
   position: absolute; /*forces it to be to the right without messing with the flow of the other elements*/
   top: .70em;
@@ -131,13 +127,32 @@ a:hover {
   background-color: white;
 }
 
-/* Nav links only for hamburger menue*/
-.toggle {
-  display: none; 
+
+.toggle { 
+  display: none; /* Nav links only for hamburger menue*/
 }
 
 
-/*Content styles*/
+.forms {
+  background-color:#E5E5E5;
+  padding: 5%;
+}
+
+.forms h2 {
+  padding-left: 0;
+}
+
+.forms input[type=text], input[type=time], input[type=date], input[type=email], select {
+  width: 100%;
+  padding: 2% 4%;
+  border: 1px solid ;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 2% 0;
+  font-size: 1.1em;
+}
+
+
   main {
     margin: 5% auto;
     min-height: 80vh;
@@ -145,26 +160,23 @@ a:hover {
 
   h1  {
   font-size: 3em;
-  text-align: center;
-  padding-bottom: 4%;
+  padding:2%;
   color:#114479;
   line-height: 1.5em; 
 }
 
   h2  {
-  padding: 4%;
   font-size: 1.5em;
-  text-align: center;
+  color:#114479;
+  padding: 2%;
+}
+
+.ingress {
+  padding: 4% 2%;
 }
 
 
   /*Index page styles*/
-  .florence-intro {
-    text-align: center;
-    font-size: 1.4em;
-    padding: 4%;
-    color:#114479;
-  }
 
   .article-section {
     background-color:#E5E5E5;
@@ -208,8 +220,12 @@ a:hover {
   /*Booking page styles*/
   .booking-choices {
     display: flex;
-    justify-content: space-evenly;
-    padding: 4%;
+    justify-content: left;
+    padding:2%;
+  }
+
+  .booking-choices div{
+    padding-right:2%;
   }
 
   label, .recurring-booking p, .change-recurring-booking p   {
@@ -233,26 +249,13 @@ a:hover {
   }
 
   .oneway-booking {
-    background-color:#E5E5E5;
     display: block;
-    padding: 5%;
   }
 
   .recurring-booking {
-    background-color:#E5E5E5;
     display: none;
-    padding: 5%;
   }
 
-  .recurring-booking input[type=text], input[type=time], input[type=date], select {
-    width: 100%;
-    padding: 2% 4%;
-    border: 1px solid ;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 2% 0;
-    font-size: 1.1em;
-  }
 
   input[type=checkbox]{
     width: 2em;
@@ -285,28 +288,22 @@ input[type=radio]{
 
   .message {
     height: 8em;
+    padding: 0;
   }
 
-  /*Change recurring booking form*/
+  
   .change-recurring-booking {
     background-color:#E5E5E5;
     padding: 5%;
   }
 
-  .change-recurring-booking input[type=text], input[type=time], input[type=date], select {
-    width: 100%;
-    padding: 2% 4%;
-    border: 1px solid ;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 2% 0;
-    font-size: 1.1em;
-  }
-
-  /*Confirmation messages */
   .confirmation-message {
     background-color:#E5E5E5;
     padding: 5%;
+  }
+
+  .confirmation-message-section p{
+    padding-left:2%;
   }
 
   .goBackLink {
@@ -315,7 +312,6 @@ input[type=radio]{
     font-size: 1.3em;
   }
 
-  /* Bookings table*/
   .table-wrapper {
     overflow-x: auto;
   }
@@ -345,7 +341,6 @@ input[type=radio]{
     margin-top: 10%; /* Makes space between tables*/
   }
 
-  /* Cancel travel */
   .delete-button {
     width: 100%;
     background-color: #c15252;
@@ -361,7 +356,11 @@ input[type=radio]{
   /* Accessibility page*/
 
   .accessibility-content p{
-    text-align: center;
+    padding:1%;
+  }
+
+  .accessibility-form p {
+    text-align: left;
   }
   
 
@@ -477,8 +476,21 @@ input[type=radio]{
 
 }
 
+
 /* Mobile devices */
 @media (max-width:400px) { 
+
+  .searchbox .fa {
+    font-size: 1.5em;
+  }
+
+  h1  {
+    font-size: 2em;
+  }
+  
+    h2  {
+    font-size: 1.5em;
+  }
 
 
   .hamburger-button {
