@@ -102,7 +102,7 @@
                 <!--Book a recurring transport form-->
                 <div class="forms recurring-booking">
                     <h2>Boka en återkommande resa</h2>
-                    <form action="RecurringConfirmationMessage.html">
+                    <form action="recurringConfirmationMessage.html">
                         <label for="title">Ge resan ett namn</label>
                         <input type="text" id="title" name="title" placeholder="Exempel: Till jobbet"><br>
                         <label for="from2">Vart vill du bli hämtad?</label>
@@ -111,10 +111,8 @@
                         <input type="text" id="to2" name="to2" placeholder="Skriv destinationsadress här..."><br>
                         <label for="time">När vill du bli hämtad?</label>
                         <input type="time" id="time2" name="time2">
-                        <!--The choices for how the travels will reoccur-->
                         <p>Välj dag för återkommande resa</p>
                         <div class="choices-wrapper">
-                            <!--Week days-->
                             <div>
                                 <input type="checkbox" id="day1" name="day1" value="monday">
                                 <label for="day1"> Måndag</label><br>
@@ -131,7 +129,6 @@
                                 <input type="checkbox" id="day7" name="day7" value="sunday">
                                 <label for="day7"> Söndag</label><br>
                             </div>
-                            <!--Every week, every other week ect...-->
                             <div>
                                 <select>
                                     <option value="everyWeek">Varje vecka</option>
@@ -143,7 +140,6 @@
                                 </select>
                             </div>
                         </div>
-                      <!-- additional info-->
                         <label for="additional-info2">Vill du lägga till något?</label>
                         <select id="additional-info2" name="additional-info2">
                             <option value="none">Inget hjälpmedel</option>
