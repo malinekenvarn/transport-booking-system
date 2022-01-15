@@ -8,4 +8,4 @@ I tried to make the design to be as accessible as possible. I use large fonts so
 
 I choose the name "Florence Färdtjänst" and my inspiration is the historical nurse Florence Nightingale. A nurse is a symbol for caring I can imagine, and I want this transport company to give the vibe of being safe and comfortable. The logotype is a Nightingale which I made in Figma and Photopea.
 
-Link to project: http://studenter.miun.se/~maek2105/dt068g/projekt
+Link to project: http://studenter.miun.se/~maek2105/dt068g/projectV2
