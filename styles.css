@@ -225,16 +225,12 @@
     padding-right:2%;
   }
 
-  label, .recurring-booking p, .change-recurring-booking p   {
+  label  {
     font-size: 1.2em;
-    font-weight: bold;
   }
-  
-  .choices-wrapper label{
-    font-size: 1em;
-    font-weight: normal;
-  }
-
+.booking-choices label{
+  font-weight: bold;
+}
   .oneway-booking input, select {
     width: 100%;
     padding: 2% 4%;
@@ -254,21 +250,9 @@
   }
 
 
-  input[type=checkbox]{
-    width: 2em;
-    height: 2em;
-}
-
 input[type=radio]{
   width: 2em;
   height: 2em;
-}
-
-.choices-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 6%;
-  margin-bottom: 6%;
 }
 
   .submit-button {
@@ -499,10 +483,6 @@ input[type=radio]{
   }
 
   .booking-choices {
-    flex-direction: column;
-  }
-
-  .choices-wrapper {
     flex-direction: column;
   }
 

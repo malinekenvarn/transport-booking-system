@@ -62,16 +62,16 @@
                 <h1>Ändra resa</h1>
                 <!--Make changes form-->
                 <div class="forms oneway-booking">
-                    <h2>Här kan du göra ändringar i din bokning</h2>
+                    <h2>Fyll i de fält du vill ändra</h2>
                     <form action="editConfirmationMessage.html">
                         <label for="from">Vart vill du bli hämtad?</label>
                         <input type="text" id="from" name="from" placeholder="Jungmansgatan 7"><br>
                         <label for="to">Vart vill du åka?</label>
                         <input type="text" id="to" name="to" placeholder="Kungsgatan 6"><br>
-                        <label for="date"> Vilket datum skall resan ske?</label>
-                        <input type="date" name="date" id="date"><br>
                         <label for="time">När vill du bli hämtad?</label>
                         <input type="time" id="time" name="time"> <br>
+                        <label for="date"> Vilket datum skall resan ske?</label>
+                        <input type="date" name="date" id="date"><br>
                         <label for="additional-info">Vill du lägga till något?</label>
                         <select id="additional-info" name="additional-info">
                             <option value="none">Inget hjälpmedel</option>
@@ -80,6 +80,8 @@
                             <option value="assistant">Ledsagare</option>
                             <option value="service-dog">Ledsagarhund</option>
                         </select>
+                        <label for="phonenr">Telefonnummer där vi kan nå er</label>
+                        <input type="text" id="phonenr" name="phonenr"><br>
                         <label for="message2">Skriv ett meddelande</label>
                         <input type="text" id="message2" name="message2" class="message"><br>
                         <button class="submit-button">Bekräfta ändringar</button>

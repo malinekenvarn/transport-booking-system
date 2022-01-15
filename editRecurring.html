@@ -59,49 +59,37 @@
     <main>
         <section class="max-width">
             <div class="booking-section content">
-                <h1>Redigera en återkommande resa</h1>
-
+                <h1>Ändra en återkommande resa</h1>
                 <div class="forms change-recurring-booking">
-                    <h2>Gör ändringar i: Spela golf med Göran</h2>
+                    <h2>Fyll i de fält du vill ändra</h2>
                     <form action="editRecurringConfirmationMessage.html">
-                        <label for="title">Ge resan ett namn</label>
-                        <input type="text" id="title" name="title" placeholder="Spela golf med Göran"><br>
                         <label for="from">Vart vill du bli hämtad?</label>
                         <input type="text" id="from" name="from" placeholder="Jungmansgatan 7"><br>
                         <label for="to">Vart vill du åka?</label>
                         <input type="text" id="to" name="to" placeholder="Storegården 30"><br>
                         <label for="time">När vill du bli hämtad?</label>
                         <input type="time" id="time" name="time">
-                        <!--The choices for how the travels will reoccur-->
-                        <p>Välj dag för återkommande resa</p>
-                        <div class="choices-wrapper">
-                            <div>
-                                <input type="checkbox" id="day1" name="day1" value="monday">
-                                <label for="day1"> Måndag</label><br>
-                                <input type="checkbox" id="day2" name="day2" value="tuesday">
-                                <label for="day2"> Tisdag</label><br>
-                                <input type="checkbox" id="day3" name="day3" value="wednesday">
-                                <label for="day3"> Onsdag</label><br>
-                                <input type="checkbox" id="day4" name="day4" value="thursday">
-                                <label for="day4"> Torsdag</label><br>
-                                <input type="checkbox" id="day5" name="day5" value="friday">
-                                <label for="day5"> Fredag</label><br>
-                                <input type="checkbox" id="day6" name="day6" value="saturday">
-                                <label for="day6"> Lördag</label><br>
-                                <input type="checkbox" id="day7" name="day7" value="sunday">
-                                <label for="day7"> Söndag</label><br>
-                            </div>
-                            <div>
-                                <select>
-                                    <option value="everyWeek">Varje vecka</option>
-                                    <option value="everyOtherWeek">Varannan vecka</option>
-                                    <option value="everyThirdWeek">Var tredje vecka</option>
-                                    <option value="everyForthWeek">Var fjärde vecka</option>
-                                    <option value="even">Jämna veckor</option>
-                                    <option value="uneven">Ojämna veckor</option>
-                                </select>
-                            </div>
-                        </div>
+                        <label for="days">Välj dag eller dagar för resan</label>
+                        <select id="days" name="days">
+                            <option value="monday">Måndag</option>
+                            <option value="tuesday">Tisdag</option>
+                            <option value="wednesday">Onsdag</option>
+                            <option value="thursday">Torsdag</option>
+                            <option value="friday">Fredag</option>
+                            <option value="saturday">Lördag</option>
+                            <option value="sunday">Söndag</option>
+                        </select>
+                        <label for="frequency">Upprepas</label>
+                        <select id="frequency" name="frequency">
+                            <option value="everyWeek">Varje vecka</option>
+                            <option value="everyOtherWeek">Varannan vecka</option>
+                            <option value="everyThirdWeek">Var tredje vecka</option>
+                            <option value="everyForthWeek">Var fjärde vecka</option>
+                            <option value="even">Jämna veckor</option>
+                            <option value="uneven">Ojämna veckor</option>
+                        </select>
+                        <label for="title">Ge resan ett namn</label>
+                        <input type="text" id="title" name="title" placeholder="Spela golf med Göran"><br>
                         <label for="additional-info">Vill du lägga till något?</label>
                         <select id="additional-info" name="additional-info">
                             <option value="none">Inget hjälpmedel</option>
@@ -110,6 +98,8 @@
                             <option value="assistant">Ledsagare</option>
                             <option value="service-dog">Ledsagarhund</option>
                         </select>
+                        <label for="phonenr">Telefonnummer där vi kan nå er</label>
+                        <input type="text" id="phonenr" name="phonenr"><br>
                         <label for="message2">Skriv ett meddelande</label>
                         <input type="text" id="message2" name="message2" class="message"><br>
                         <button class="submit-button">Bekräfta ändringar</button>
